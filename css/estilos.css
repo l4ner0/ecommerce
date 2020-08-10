@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 70px 1fr 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/* ESTILOS HEADER */
+.header {
+  grid-area: header;
+}
+/* FIN ESTILOS HEADER */
+
+/* ESTILOS MAIN */
+.main {
+  grid-area: main;
+}
+
+.carousel-principal .container-carousel {
+  height: 130px;
+}
+.carousel-principal .container-carousel img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-primary .container .carousel-container .container-img {
+  height: 300px;
+}
+.section-primary .container .carousel-container .container-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.category .category-item .container-image {
+  height: 300px;
+}
+.category .category-item .container-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-secondary .container .carousel-container .container-img {
+  height: 300px;
+}
+.section-secondary .container .carousel-container .container-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* FIN ESTILOS MAIN */
+
+/* ESTILOS FOOTER */
+.footer {
+  grid-area: footer;
+}
+/* FIN ESTILOS MAIN */
