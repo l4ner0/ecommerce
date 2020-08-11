@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
@@ -12,208 +13,211 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="header-logo">Logo</div>
-            <div class="header-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div class="header__logo">Logo</div>
+            <div class="header__menu">
+                <a href="#"><i class="fa fa-shopping-cart header__icon-shop" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-bars header__icon-burger" aria-hidden="true"></i></a>
+            </div>
         </header>
         <main class="main">
-            <section class="carousel-principal">
-                <div class="container-carousel">
-                    <img src="/images/defaultjpg.jpg" alt="">
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__options">
+                        <h4 class="hero__subtitle">We represent</h4>
+                        <h2 class="hero__title">London street style</h2>
+                        <a href="#" class="button">Shop now</a>
+                    </div>
+                    <img class="hero__image" src="/images/model-principal.png" alt="">
                 </div>
             </section>
             <section class="section-primary">
-                <div class="container">
-                    <h2>Tendencias</h2>
-                    <h3>La ropa de moda</h3>
-                    <div class="carousel-container">
-                        <div class="container-img">
-                            <img src="/images/defaultjpg.jpg" alt="">
+                <h2 class="section-primary__titulo">Tendencias</h2>
+                <h3 class="section-primary__description">La ropa de moda</h3>
+                <div class="carousel-producto">
+                    <div class="carousel-producto__container-image">
+                        <img class="carousel-producto__image" src="/images/defaultjpg.jpg" alt="">
+                    </div>
+                    <div class="carousel-producto__options">
+                        <div class="carousel-producto__header">
+                            <p class="carousel-producto__name">Paul Smith</p>
+                            <p class="carousel-producto__add"><i class="fa fa-plus" aria-hidden="true"></i></p>
                         </div>
-                        <div class="container-options">
-                            <div>
-                                <p>Paul Smith</p>
-                                <p><i class="fa fa-plus" aria-hidden="true"></i></p>
-                            </div>
-                            <p>Accesorios</p>
-                            <p>S/ XX.XX</p>
-                        </div>
+                        <p class="carousel-producto__category">Accesorios</p>
+                        <p class="carousel-producto__price">S/ XX.XX</p>
                     </div>
                 </div>
             </section>
             <section class="category">
-                <div class="category-item">
-                    <div class="container-image">
-                        <img src="/images/defaultjpg.jpg" alt="">
+                <div class="category__item">
+                    <div class="category__container-image">
+                        <img class="category__image" src="/images/defaultjpg.jpg" alt="">
                     </div>
-                    <div>
-                        <button>Hombre</button>
-                    </div>
-                </div>
-                <div class="category-item">
-                    <div class="container-image">
-                        <img src="/images/defaultjpg.jpg" alt="">
-                    </div>
-                    <div>
-                        <button>Zapatos</button>
+                    <div class="category__container-action">
+                        <button class="category__button">Hombre</button>
                     </div>
                 </div>
-                <div class="category-item">
-                    <div class="container-image">
-                        <img src="/images/defaultjpg.jpg" alt="">
+                <div class="category__item">
+                    <div class="category__container-image">
+                        <img class="category__image" src="/images/defaultjpg.jpg" alt="">
                     </div>
-                    <div>
-                        <button>Mujer</button>
+                    <div class="category__container-action">
+                        <button class="category__button">Zapatos</button>
+                    </div>
+                </div>
+                <div class="category__item">
+                    <div class="category__container-image">
+                        <img class="category__image" src="/images/defaultjpg.jpg" alt="">
+                    </div>
+                    <div class="category__container-action">
+                        <button class="category__button">Mujer</button>
                     </div>
                 </div>
             </section>
             <section class="promotions">
-                <div class="promotions-container">
-                    <h3>NOVEMBER SALE</h2>
-                        <h4>FREE SHIPPING OVER $125 FOR INTERNATIONAL ORDERS</h4>
-                        <button>Comprar Ahora</button>
+                <div class="promotions__container">
+                    <h3 class="promotions__title">NOVEMBER SALE</h2>
+                        <h4 class="promotions__subtitle">FREE SHIPPING OVER $125 FOR INTERNATIONAL ORDERS</h4>
+                        <button class="button">Comprar Ahora</button>
                 </div>
             </section>
             <section class="section-secondary">
-                <div class="container">
-                    <h2>Más Vendidos</h2>
-                    <h3>Artículos más vendidos en el mercado</h3>
-                    <div class="carousel-container">
-                        <div class="container-img">
-                            <img src="/images/defaultjpg.jpg" alt="">
+                <h2 class="section-secondary__titulo">Más Vendidos</h2>
+                <h3 class="section-secondary__description">Artículos más vendidos en el mercado</h3>
+                <div class="carousel-producto">
+                    <div class="carousel-producto__container-image">
+                        <img class="carousel-producto__image" src="/images/defaultjpg.jpg" alt="">
+                    </div>
+                    <div class="carousel-producto__options">
+                        <div class="carousel-producto__header">
+                            <p class="carousel-producto__name">Sandtwist</p>
+                            <p class="carousel-producto__add"><i class="fa fa-plus" aria-hidden="true"></i></p>
                         </div>
-                        <div class="container-options">
-                            <div>
-                                <p>Sandtwist</p>
-                                <p><i class="fa fa-plus" aria-hidden="true"></i></p>
-                            </div>
-                            <p>Pantalones</p>
-                            <p>S/ XX.XX</p>
-                        </div>
+                        <p class="carousel-producto__category">Pantalones</p>
+                        <p class="carousel-producto__price">S/ XX.XX</p>
                     </div>
                 </div>
             </section>
             <section class="other-section">
-                <div class="container">
-                    <div class="other-section-item">
-                        <h3>Destacados</h3>
-                        <ul>
-                            <li>
-                                <div class="container-img">
-                                    <img src="images/defaultjpg.jpg" width="50" height="70" alt="">
-                                </div>
-                                <div class="container-description">
-                                    <p>Billionarie Boys</p>
-                                    <p>S/ xx.xx</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container-img">
-                                    <img src="images/defaultjpg.jpg" width="50" height="70" alt="">
-                                </div>
-                                <div class="container-description">
-                                    <p>Billionarie Boys</p>
-                                    <p>S/ xx.xx</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container-img">
-                                    <img src="images/defaultjpg.jpg" width="50" height="70" alt="">
-                                </div>
-                                <div class="container-description">
-                                    <p>Billionarie Boys</p>
-                                    <p>S/ xx.xx</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="other-section-item">
-                        <h3>Nuevos Prouctos</h3>
-                        <ul>
-                            <li>
-                                <div class="container-img">
-                                    <img src="images/defaultjpg.jpg" width="50" height="70" alt="">
-                                </div>
-                                <div class="container-description">
-                                    <p>Butterfly</p>
-                                    <p>S/ xx.xx</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container-img">
-                                    <img src="images/defaultjpg.jpg" width="50" height="70" alt="">
-                                </div>
-                                <div class="container-description">
-                                    <p>Butterfly</p>
-                                    <p>S/ xx.xx</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="container-img">
-                                    <img src="images/defaultjpg.jpg" width="50" height="70" alt="">
-                                </div>
-                                <div class="container-description">
-                                    <p>Butterfly</p>
-                                    <p>S/ xx.xx</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="other-section__item">
+                    <h3 class="other-section__titulo">Destacados</h3>
+                    <ul class="other-section__list">
+                        <li class="other-section__item">
+                            <div class="other-section__container-img">
+                                <img class="other-section__image" src="images/defaultjpg.jpg" width="50" height="70"
+                                    alt="">
+                            </div>
+                            <div class="other-section__description">
+                                <p class="other-section__product">Billionarie Boys</p>
+                                <p class="other-section__price">S/ xx.xx</p>
+                            </div>
+                        </li>
+                        <li class="other-section__item">
+                            <div class="other-section__container-img">
+                                <img class="other-section__image" src="images/defaultjpg.jpg" width="50" height="70"
+                                    alt="">
+                            </div>
+                            <div class="other-section__description">
+                                <p class="other-section__product">Billionarie Boys</p>
+                                <p class="other-section__price">S/ xx.xx</p>
+                            </div>
+                        </li>
+                        <li class="other-section__item">
+                            <div class="other-section__container-img">
+                                <img class="other-section__image" src="images/defaultjpg.jpg" width="50" height="70"
+                                    alt="">
+                            </div>
+                            <div class="other-section__description">
+                                <p class="other-section__product">Billionarie Boys</p>
+                                <p class="other-section__price">S/ xx.xx</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="other-section__item">
+                    <h3 class="other-section__titulo">Nuevos Productos</h3>
+                    <ul class="other-section__list">
+                        <li class="other-section__item">
+                            <div class="other-section__container-img">
+                                <img class="other-section__image" src="images/defaultjpg.jpg" width="50" height="70"
+                                    alt="">
+                            </div>
+                            <div class="other-section__description">
+                                <p class="other-section__product">Butterfly</p>
+                                <p class="other-section__price">S/ xx.xx</p>
+                            </div>
+                        </li>
+                        <li class="other-section__item">
+                            <div class="other-section__container-img">
+                                <img class="other-section__image" src="images/defaultjpg.jpg" width="50" height="70"
+                                    alt="">
+                            </div>
+                            <div class="other-section__description">
+                                <p class="other-section__product">Butterfly</p>
+                                <p class="other-section__price">S/ xx.xx</p>
+                            </div>
+                        </li>
+                        <li class="other-section__item">
+                            <div class="other-section__container-img">
+                                <img class="other-section__image" src="images/defaultjpg.jpg" width="50" height="70"
+                                    alt="">
+                            </div>
+                            <div class="other-section__description">
+                                <p class="other-section__product">Butterfly</p>
+                                <p class="other-section__price">S/ xx.xx</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="partners">
-                <div class="container">
-                    <div class="carousel-partners">
-                        <div class="contaier-img">
-                            <img src="images/defaultjpg.jpg" width="120" height="50" alt="">
-                        </div>
+                <div class="partners__carousel">
+                    <div class="partners__container-img">
+                        <img class="partners__img" src="images/defaultjpg.jpg" width="120" height="50" alt="">
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
             <section class="other-category">
-                <div class="container">
-                    <div class="other-category-item">
-                        <h4>Categoría 1</h4>
-                        <ul>
-                            <li>Elemento 1</li>
-                            <li>Elemento 2</li>
-                            <li>Elemento 3</li>
-                            <li>Elemento 4</li>
-                            <li>Elemento 5</li>
-                        </ul>
-                    </div>
-                    <div class="other-category-item">
-                        <h4>Categoría 2</h4>
-                        <ul>
-                            <li>Elemento 1</li>
-                            <li>Elemento 2</li>
-                            <li>Elemento 3</li>
-                            <li>Elemento 4</li>
-                            <li>Elemento 5</li>
-                        </ul>
-                    </div>
+                <div class="other-category__container">
+                    <h4 class="other-category__titulo">Categoría 1</h4>
+                    <ul class="other-category__list">
+                        <li class="other-category__item">Elemento 1</li>
+                        <li class="other-category__item">Elemento 2</li>
+                        <li class="other-category__item">Elemento 3</li>
+                        <li class="other-category__item">Elemento 4</li>
+                        <li class="other-category__item">Elemento 5</li>
+                    </ul>
+                </div>
+                <div class="other-category__container">
+                    <h4 class="other-category__titulo">Categoría 2</h4>
+                    <ul class="other-category__list">
+                        <li class="other-category__item">Elemento 1</li>
+                        <li class="other-category__item">Elemento 2</li>
+                        <li class="other-category__item">Elemento 3</li>
+                        <li class="other-category__item">Elemento 4</li>
+                        <li class="other-category__item">Elemento 5</li>
+                    </ul>
                 </div>
             </section>
             <section class="social-networks">
-                <h4>Redes Sociales</h4>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>Youtube</li>
+                <h4 class="social-networks__title">Redes Sociales</h4>
+                <ul class="social-networks__list">
+                    <li class="social-networks__item">Facebook</li>
+                    <li class="social-networks__item">Twitter</li>
+                    <li class="social-networks__item">Instagram</li>
+                    <li class="social-networks__item">Youtube</li>
                 </ul>
             </section>
             <section class="description">© Copyright 2020 | Aurum Theme by Laborator</section>
             <section class="payment-methods">
-                <ul>
-                    <li>Visa</li>
-                    <li>Paypal</li>
-                    <li>Mastercard</li>
+                <ul class="payment-methods__list">
+                    <li class="payment-methods__item">Visa</li>
+                    <li class="payment-methods__item">Paypal</li>
+                    <li class="payment-methods__item">Mastercard</li>
                 </ul>
             </section>
         </footer>
-
     </div>
 </body>
 
