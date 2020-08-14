@@ -13,6 +13,7 @@
   --text-section-secondary-color: #afafaf;
   --text-footer-primary-color: #eee;
   --text-footer-secondary-color: #959595;
+  --text-header-primary-color: #A3A3A3;
 
   /* Colores de contenedor */
   --content-carousel-color: #f3f3f3;
@@ -24,6 +25,7 @@
   /* Colores de borde */
   --border-primary-color: #eeeeee;
   --boder-secondary-color: #3a3a3a;
+  --boder-header-color: #4E4E4E;
 }
 
 * {
@@ -43,16 +45,33 @@
 }
 
 /* ----------------- INICIO HEADER ----------------- */
+
 .header {
   grid-area: header;
+}
+
+.header__options {
+  display: none !important;
+}
+
+.header__content--desktop {
+  display: none !important;
+}
+
+.header--container {
+  display: flex;
+  justify-content: center;
   position: fixed;
+  width: 100%;
   background-color: var(--content-white-color);
+  z-index: 2;
+}
+.header__content {
   width: 100%;
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
 }
 
 .header__logo {
@@ -79,11 +98,14 @@
 
 /* ----------------- INICIO HERO ----------------- */
 
+.hero {
+  background-color: var(--content-carousel-color);
+}
+
 .hero__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--content-carousel-color);
   height: 130px;
   padding: 0 20px;
   text-transform: uppercase;
@@ -497,6 +519,63 @@
 /* ----------------- INICIO MEDIA TABLET ----------------- */
 
 @media screen and (min-width: 768px) {
+  .header__options {
+    display: block !important;
+  }
+
+  .header__content--desktop {
+    display: block !important;
+  }
+
+  .header {
+    background-color: var(--content-secondary-color);
+  }
+
+  .header__options-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: auto;
+    padding: 10px 10px;
+    color: var(--text-header-primary-color);
+    font-size: 12px;
+  }
+
+  .header__options-list {
+    list-style: none;
+    display: flex;
+  }
+
+  .header__options-link {
+    color: var(--text-header-primary-color);
+    text-decoration: none;
+    padding: 0 10px;
+    text-transform: uppercase;    
+  }
+
+  .header__options-link:hover {  
+    color: #F0F0F0;
+  }
+
+  .header__options-link--divider{
+    border-right: 1px solid var(--boder-header-color);
+  }
+  
+  .header__content--mobile {
+    display: none !important;
+  }
+
+  .header__content {
+    flex-direction: column;
+  }
+
+  .header__default {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+  }
+
   .hero__content {
     height: 328px;
     font-size: 30px;
@@ -537,14 +616,14 @@
 
   .other-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .other-section__content {
     width: 290px;
   }
 
-  .footer_list {
+  .footer__list {
     display: flex;
     justify-content: space-between;
   }
@@ -563,4 +642,74 @@
 /* ----------------- FIN MEDIA TABLET ----------------- */
 
 /* ----------------- INICIO MEDIA DESKTOP ----------------- */
+
+@media screen and (min-width: 992px) {
+  .header__content {
+    max-width: 1140px;
+  }
+  .hero__content,
+  .section-primary--container,
+  .category--container,
+  .promotions--container,
+  .section-secondary--container,
+  .other-section--container,
+  .partners--container,
+  .footer--conatiner {
+    max-width: 1140px;
+  }
+
+  .hero__content {
+    height: 425px;
+  }
+
+  .hero__options {
+    margin-left: 50px;
+  }
+
+  .carousel-producto {
+    width: 260px;
+  }
+
+  .other-section {
+    justify-content: space-around;
+  }
+
+  .other-section__content {
+    width: 180px;
+  }
+
+  .footer_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .payment-methods {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .hero__content,
+  .section-primary--container,
+  .category--container,
+  .promotions--container,
+  .section-secondary--container,
+  .other-section--container,
+  .partners--container,
+  .footer--conatiner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__content {
+    height: 532px;
+    font-size: 48px;
+  }
+
+  .hero__subtitle {
+    font-size: 24px;
+  }
+}
+
 /* ----------------- FIN MEDIA DESKTOP ----------------- */
